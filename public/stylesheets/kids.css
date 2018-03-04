@@ -1,0 +1,84 @@
+body {
+  background-color : #E6F0FF;
+  color: white;
+}
+.hidden{
+  display: none;
+}
+#kidsIntro{
+  font-size: 2em;
+  color: #9664D1;
+}
+.kidsIntro2{
+  font-size: 1.8em;
+  color: #9664D1;
+}
+#kidsFilter{
+  margin: 30px 0px;
+  text-align: center;
+}
+#clearF{
+  color: #553285;
+}
+#clearF:hover{
+  color: #9664D1;
+}
+.filterOption{
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  display: inline-block;
+  margin-left: 60px;
+}
+.filterOption:first-of-type{
+  margin-left: 0;
+}
+.filterOption p {
+  margin-top: 60px;
+  font-size: 1.3em;
+}
+#filter1{
+  background-color: #f26522;
+}
+#filter2{
+  background-color: #229cf2;
+}
+#filter3{
+  background-color: #f2e122;
+}
+#filter4{
+  background-color: #22f249;
+}
+.movieFilter, .tvFilter, .musicFilter{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.secF{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-left: 40px;
+}
+.filterOption:hover, .secF:hover{
+  color: black;
+}
+.secF:first-of-type{
+  margin-left: 0;
+}
+#movF1, #tvF5, #musF3{
+  background-color: #ed1c24;
+}
+#movF2, #tvF4, #musF1{
+  background-color: #FFC702;
+}
+#movF3, #tvF1, #musF5{
+  background-color: #461aa1;
+}
+#movF4, #tvF3, #musF2{
+  background-color: #FF44FF;
+}
+#movF5, #tvF2, #musF4{
+  background-color: #00a651;
+}
