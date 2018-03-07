@@ -1,11 +1,10 @@
 var config = {
   user : "root",
-  password : "root", // leave this blank for windows machines
+  password : "root",
   port: 8889,
   host: "localhost",
-  database: "",
-
-  kidsmode : true
+  database: "wyllieVideoApp",
+  kidsmode : false
 }
 
 module.exports = config;

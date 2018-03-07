@@ -1,0 +1,55 @@
+<a href="/">
+  <i class="fa-fa-home"></i>
+</a>
+<header id="mainHeader">
+  <h1 id="logo">{{ title }}</h1>
+</header>
+<div class="parentMoviesContainer">
+  <div class="parentMoviesFilter">
+    <section id="filter">
+      <p id="parentsIntro">What would you like to see today?</p>
+      <p id="clearF">Clear Filter</p>
+      <h2 class="hidden">Filter</h2>
+      <div class="filterOption" id="filter1"><p>Movies</p></div>
+      <div class="filterOption" id="filter2"><p>Television</p></div>
+      <div class="filterOption" id="filter3"><p>Music</p></div>
+      <div class="filterOption" id="filter4"><p>Favourites</p></div>
+    </section>
+    <section id="secondaryFilters">
+      <h2 class="hidden"> Secondary Filter</h2>
+      <div class="movieFilter hidden">
+        <p class="Intro2">What Kind of Movies?</p>
+        <div class="secF" id="adventure">Adventure</div>
+        <div class="secF" id="comedy">Comedy</div>
+        <div class="secF" id="education">Educational</div>
+        <div class="secF" id="serious">Serious</div>
+        <div class="secF" id="sports">Sports</div>
+      </div>
+      <div class="tvFilter hidden">
+        <p class="Intro2">What Kind of Shows?</p>
+        <div class="secF" id="tvF1">Cartoon</div>
+        <div class="secF" id="tvF2">Educational</div>
+        <div class="secF" id="tvF3">Comedy</div>
+        <div class="secF" id="tvF4">History</div>
+        <div class="secF" id="tvF5">Sports</div>
+      </div>
+      <div class="musicFilter hidden">
+        <p class="Intro2">What Kind of Music?</p>
+        <div class="secF" id="musF1">Pop</div>
+        <div class="secF" id="musF2">Country</div>
+        <div class="secF" id="musF3">Dance</div>
+        <div class="secF" id="musF4">Rock</div>
+        <div class="secF" id="musF5">Disney</div>
+      </div>
+    </section>
+  </div>
+  <div id="parentMovies">
+    {{#each movieData}}
+    <div class="movieThumb">
+      <img src="../public/images/{{movie_thumbnail}}" alt="{{movie_title}}">
+      <h2>{{movie_title}}</h2>
+      <p>{{movie_rating}}</p>
+    </div>
+    {{/each}}
+  </div>
+</div>

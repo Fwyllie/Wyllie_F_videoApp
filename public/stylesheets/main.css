@@ -134,3 +134,52 @@ footer p{
   font-size: 0.8em;
   margin-right: 5px;
 }
+
+/*MOVIESS*/
+.parentMoviesContainer{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.parentMoviesFilter{
+  text-align: center;
+}
+#parentsIntro{
+  font-size: 2em;
+  color: #553285;
+}
+.filterOption{
+  display: inline-block;
+  margin: 2px 10px;
+  font-size: 1.2em;
+}
+.filterOption:hover{
+  color: #553285;
+  margin-bottom: 0px;
+  border-bottom: 2px solid #553285;
+}
+#Intro{
+  font-size: 2em;
+  color: #9664D1;
+}
+.Intro2{
+  font-size: 1.6em;
+  color: #9664D1;
+}
+.movieThumb{
+  display: inline-block;
+  margin: 20px 10px;
+}
+.movieThumb h2{
+  font-size: 1.3em;
+}
+.secF{
+  display: inline-block;
+  margin: 2px 10px;
+  font-size: 1.2em;
+  padding-bottom: 5px; 
+}
+.secF:hover{
+  color: #553285;
+  margin-bottom: 0px;
+  border-bottom: 2px solid #553285;
+}

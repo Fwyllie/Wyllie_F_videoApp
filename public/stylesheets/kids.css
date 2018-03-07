@@ -5,11 +5,11 @@ body {
 .hidden{
   display: none;
 }
-#kidsIntro{
+#Intro{
   font-size: 2em;
   color: #9664D1;
 }
-.kidsIntro2{
+.Intro2{
   font-size: 1.8em;
   color: #9664D1;
 }
