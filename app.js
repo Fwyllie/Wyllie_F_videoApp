@@ -23,10 +23,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // import all of your routes
 app.use('/', require('./routes/index'));
-// app.use('/login', require('./routes/login'));
-app.use('/users', require('./routes/users'));
-app.use('/getMovies', require('./routes/getMovies'));
-app.use('/api', require('./routes/api'));
+app.use('/login', require('./routes/login'));
+app.use('/parents', require('./routes/parentContent'));
+app.use('/kids', require('./routes/kidsContent'));
+app.use('/watch', require('./routes/getSingle'));
+// app.use('/api', require('./routes/api'));
 
 
 // catch 404 and forward to error handler

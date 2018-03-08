@@ -1,6 +1,9 @@
 (() => {
 
-var movie = document.querySelector("#filter1"),
+var movieSelection = document.querySelector("#parentMovies"),
+    musicSelection = document.querySelector("#parentMusic"),
+    tvSelection = document.querySelector("#parentTv"),
+    movie = document.querySelector("#filter1"),
     tv = document.querySelector("#filter2"),
     music = document.querySelector("#filter3"),
     movieFs = document.querySelector(".movieFilter"),
@@ -12,21 +15,33 @@ function showMovF(){
   movieFs.style.display="block";
   tvFs.style.display = "none";
   musicFs.style.display = "none";
+  movieSelection.style.display = "block";
+  musicSelection.style.display = "none";
+  tvSelection.style.display = "none";
 }
 function showtvF(){
   tvFs.style.display="block";
   movieFs.style.display = "none";
   musicFs.style.display = "none";
+  movieSelection.style.display = "none";
+  musicSelection.style.display = "none";
+  tvSelection.style.display = "block";
 }
 function showmusF(){
   musicFs.style.display="block";
   tvFs.style.display = "none";
   movieFs.style.display = "none";
+  movieSelection.style.display = "none";
+  musicSelection.style.display = "block";
+  tvSelection.style.display = "none";
 }
 function clearFilter(){
   musicFs.style.display="none";
   tvFs.style.display = "none";
   movieFs.style.display = "none";
+  movieSelection.style.display = "block";
+  musicSelection.style.display = "block";
+  tvSelection.style.display = "block";
 }
 
 clear.addEventListener('click', clearFilter, false);
