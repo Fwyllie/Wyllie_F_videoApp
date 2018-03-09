@@ -23,21 +23,21 @@ router.use((req, res, next) => {
   next(); // run the next method (get, put, post, etc)
 });
 
-/*Genre Filter*/
-// router.get('/:id', (req, res) => {
-//   console.log(req.params.id);
-//   console.log('hit an api route with params');
-//
-//   connect.query(`SELECT movie_title, movie_rating, movie_thumbnail FROM tbl_movies WHERE movie_genre="${req.params.id}"`, (err, result) => {
-//     if (err) {
-//       throw err; console.log(err);
-//     } else {
-//       console.log(result);
-//       res.json({
-//         movieData : result
-//       });
-//     }
-//   });
-// });
+
+router.get('/:id', (req, res) => {
+  console.log(req.params.id);
+  console.log('hit an api route with params');
+
+  connect.query(`SELECT movie_title, movie_rating, movie_thumbnail FROM tbl_movies WHERE movie_genre="${req.params.id}"`, (err, result) => {
+    if (err) {
+      throw err; console.log(err);
+    } else {
+      console.log(result);
+      res.json({
+        movieData : result
+      });
+    }
+  });
+});
 
 module.exports = router;

@@ -4,7 +4,7 @@ var config = require('../config');
 
 router.get('/', (req, res) => {
       res.render('home', {
-        title: 'Flashback!',
+        title: 'Fran\'s Greatest Hits',
         css : 'main.css'
       });
 });

@@ -7,6 +7,7 @@ var config = require('../config');
 router.get('/:id', (req, res) => {
   console.log(req.params.id);
   connect.query(`SELECT * FROM tbl_movies WHERE movie_id=${req.params.id}`, (err, result) => {
+    connect.query(`SELECT * FROM tbl_movies m, tbl_reviews r, tbl_mov_rev mr WHERE m.movie_id = mr.movie_id AND r.review_id = mr.review_id AND m.movie_id = ${req.params.id}`, (err, revResult) => {
     if (err) {
       throw err,
       console.log(err);
@@ -14,12 +15,13 @@ router.get('/:id', (req, res) => {
       console.log(result);
       res.render('watch', {
         title: 'watch page',
-        movieData : result,
+        singleData : result,
+        reviewData : revResult,
         css : 'main.css'
       });
     }
   });
-
+  });
 });
 
 module.exports = router;

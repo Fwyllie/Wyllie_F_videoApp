@@ -1,8 +1,8 @@
 (() => {
 
-var movieSelection = document.querySelector("#parentMovies"),
-    musicSelection = document.querySelector("#parentMusic"),
-    tvSelection = document.querySelector("#parentTv"),
+var movieSelection = document.querySelector("#movies"),
+    musicSelection = document.querySelector("#music"),
+    tvSelection = document.querySelector("#tv"),
     movie = document.querySelector("#filter1"),
     tv = document.querySelector("#filter2"),
     music = document.querySelector("#filter3"),

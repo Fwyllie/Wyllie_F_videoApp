@@ -1,10 +1,5 @@
-<header id="mainHeader">
-  <h1 id="logo">{{ title }}</h1>
-  <a href="/login" id="loginButton">Login</a>
-</header>
-<div id="container">
+<div id="kidsContainer">
   <section id="kidsFilter">
-    <p id="Intro">What would you like to see today?</p>
     <p id="clearF">Clear Filter</p>
     <h2 class="hidden">Filter</h2>
     <div class="filterOption" id="filter1"><p>Movies</p></div>
@@ -15,32 +10,65 @@
   <section id="secondaryFilters">
     <h2 class="hidden"> Secondary Filter</h2>
     <div class="movieFilter hidden">
-      <p class="Intro2">What Kind of Movies?</p>
-      <div class="secF" id="movF1">Adventure</div>
-      <div class="secF" id="movF2">Comedy</div>
-      <div class="secF" id="movF3">Educational</div>
-      <div class="secF" id="movF4">Serious</div>
-      <div class="secF" id="movF5">Sports</div>
+      <p class="kidsIntro2">What Kind of Movies?</p>
+      <div class="secF" id="adventure"><p>Adventure</p></div>
+      <div class="secF" id="comedy"><p>Comedy</p></div>
+      <div class="secF" id="educational"><p>Educational</p></div>
+      <div class="secF" id="serious"><p>Serious</p></div>
+      <div class="secF" id="sports"><p>Sports</p></div>
     </div>
     <div class="tvFilter hidden">
       <p class="kidsIntro2">What Kind of Shows?</p>
-      <div class="secF" id="tvF1">Cartoon</div>
-      <div class="secF" id="tvF2">Educational</div>
-      <div class="secF" id="tvF3">Comedy</div>
-      <div class="secF" id="tvF4">History</div>
-      <div class="secF" id="tvF5">Sports</div>
+      <div class="secF" id="cartoon"><p>Cartoon</p></div>
+      <div class="secF" id="education"><p>Education</p></div>
+      <div class="secF" id="funny"><p>Funny</p></div>
+      <div class="secF" id="history"><p>History</p></div>
     </div>
     <div class="musicFilter hidden">
-      <p class="Intro2">What Kind of Music?</p>
-      <div class="secF" id="musF1">Pop</div>
-      <div class="secF" id="musF2">Country</div>
-      <div class="secF" id="musF3">Dance</div>
-      <div class="secF" id="musF4">Rock</div>
-      <div class="secF" id="musF5">Disney</div>
+      <p class="kidsIntro2">What Kind of Music?</p>
+      <div class="secF" id="pop"><p>Pop</p></div>
+      <div class="secF" id="country"><p>Country</p></div>
+      <div class="secF" id="dance"><p>Dance</p></div>
+      <div class="secF" id="rock"><p>Rock</p></div>
+      <div class="secF" id="disney"><p>Disney</p></div>
     </div>
   </section>
+  <div id="movies">
+    <div id="kidsMovies">
+      <h2>MOVIES!</h2>
+      {{#each movieData}}
+      <a class="movieLink" href="/movies/{{movie_id}}" id="{{movie_id}}">
+        <div class="movieThumb">
+          <img src="images/{{movie_thumbnail}}" alt="{{movie_title}}">
+          <h3>{{movie_title}}</h3>
+        </div>
+      </a>
+      {{/each}}
+    </div>
+  </div>
+  <div id="music">
+    <div id="kidsMusic">
+      <h2>MUSIC!</h2>
+      {{#each musicData}}
+        <div class="musicThumb">
+          <img class="musicCover" src="images/{{music_thumbnail}}" alt="{{music_name}}">
+          <audio controls class="audio" src="audio/{{music_link}}"></audio>
+          <h3>{{music_name}}</h3>
+          <p>{{music_artist}}</p>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+  <div id="tv">
+    <div id="kidsTv">
+      <h2>TV SHOWS!</h2>
+      {{#each tvData}}
+        <div class="movieThumb">
+          <img src="images/{{tv_thumbnail}}" alt="{{tv_name}}">
+          <h3>{{tv_name}}</h3>
+          <p>{{tv_artist}}</p>
+        </div>
+      {{/each}}
+    </div>
+  </div>
 </div>
-<footer>
-  <h1 id="footerlogo">{{ title }}</h1>
-  <p>All copyrights reserved 2018</p>
-</footer>

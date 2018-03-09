@@ -1,11 +1,5 @@
-<a href="/">
-  <i class="fa-fa-home"></i>
-</a>
-<header id="mainHeader">
-  <h1 id="logo">{{ title }}</h1>
-</header>
   <div id="parentMovies">
-    {{#each movieData}}
+    {{#each singleData}}
     <div class="movieThumb" id="{{movie_id}}">
       <video controls class="mainVideo" src="videos/{{movie_trailer}}" alt="{{movie_title}}" poster="images/{{movie_thumbnail}}"></video>
       <div id="mainText">
@@ -20,5 +14,9 @@
       <img id="movieCover" src="images/{{movie_cover}}" alt="{{movie_title}}">
     </div>
     {{/each}}
+    <h2>Reviews!</h2>
+    {{#each reviewData}}
+      <h3>{{review_name}}</h3>
+      <p>{{review_comment}}</p>
+    {{/each}}
   </div>
-</div>

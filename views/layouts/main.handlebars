@@ -10,9 +10,8 @@
 </head>
 <body>
   {{{ body }}}
-<script src="javascripts/main.js"></script>
-<script src="javascripts/filter.js"></script>
-<script src="javascripts/loginMode.js"></script>
-<script src="javascripts/playMusic.js"></script>
+{{#each js}}
+<script src="javascripts/{{this}}"></script>
+{{/each}}
 </body>
 </html>

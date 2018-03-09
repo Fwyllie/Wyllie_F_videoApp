@@ -3,7 +3,7 @@
   let link = document.querySelectorAll('.movieLink');
 
   function fetchData() {
-    let url = "movies/" + this.id;
+    let url = "parents/" + this.id;
 
     fetch(url)
     .then((resp) => resp.json())

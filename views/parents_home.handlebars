@@ -43,32 +43,34 @@
       </div>
     </section>
   </div>
-  <div id="parentMovies">
+  <div id="movies">
+    <h2>Movies!</h2>
     {{#each movieData}}
-    <a class="movieLink" href="/movies/{{movie_id}}" id="{{movie_id}}">
+    <a class="movieLink" href="/watch/{{movie_id}}" id="{{movie_id}}">
       <div class="movieThumb">
         <img src="images/{{movie_thumbnail}}" alt="{{movie_title}}">
-        <h2>{{movie_title}}</h2>
-        <p>{{movie_rating}}</p>
+        <h3>{{movie_title}}</h3>
       </div>
     </a>
     {{/each}}
   </div>
-  <div id="parentMusic">
+  <div id="music">
+    <h2>Music!</h2>
     {{#each musicData}}
-      <div class="movieThumb">
-        <audio class="audio" src="audio/{{music_link}}"></audio>
+      <div class="musicThumb">
         <img class="musicCover" src="images/{{music_thumbnail}}" alt="{{music_name}}">
-        <h2>{{music_name}}</h2>
+        <audio controls class="audio" src="audio/{{music_link}}"></audio>
+        <h3>{{music_name}}</h3>
         <p>{{music_artist}}</p>
       </div>
     {{/each}}
   </div>
-  <div id="parentTv">
+  <div id="tv">
+    <h2>TV Shows!</h2>
     {{#each tvData}}
       <div class="movieThumb">
         <img src="images/{{tv_thumbnail}}" alt="{{tv_name}}">
-        <h2>{{tv_name}}</h2>
+        <h3>{{tv_name}}</h3>
         <p>{{tv_artist}}</p>
       </div>
     {{/each}}

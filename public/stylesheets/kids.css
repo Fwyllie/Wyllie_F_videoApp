@@ -5,13 +5,17 @@ body {
 .hidden{
   display: none;
 }
+#kidsContainer{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 #Intro{
   font-size: 2em;
   color: #9664D1;
 }
-.Intro2{
+.kidsIntro2{
   font-size: 1.8em;
-  color: #9664D1;
+  color:#E57420;
 }
 #kidsFilter{
   margin: 30px 0px;
@@ -53,7 +57,6 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-
 .secF{
   width: 100px;
   height: 100px;
@@ -67,18 +70,60 @@ body {
 .secF:first-of-type{
   margin-left: 0;
 }
-#movF1, #tvF5, #musF3{
+.secF p{
+  margin-top: 40px;
+}
+#adventure, #cartoon, #country{
   background-color: #ed1c24;
 }
-#movF2, #tvF4, #musF1{
+#comedy, #funny, #dance{
   background-color: #FFC702;
 }
-#movF3, #tvF1, #musF5{
+#educational, #history, #disney{
   background-color: #461aa1;
 }
-#movF4, #tvF3, #musF2{
+#serious, #education, #rock{
   background-color: #FF44FF;
 }
-#movF5, #tvF2, #musF4{
+#sports, #pop{
   background-color: #00a651;
+}
+
+#kidsTv, #kidsMusic, #kidsMovies{
+  color: black;
+}
+#kidsTv h2, #kidsMusic h2, #kidsMovies h2{
+  border-bottom: 2px solid black;
+}
+
+.movieThumb{
+  display: inline-block;
+  margin: 20px 10px;
+  color: black;
+  width: 20%;
+}
+.movieThumb img{
+  width: 80%;
+}
+.movieThumb h3{
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+.movieThumb h3:hover{
+  color: #553285;
+}
+.musicThumb{
+  display: inline-block;
+  margin: 20px 0px;
+  color: black;
+  width: 15%;
+}
+.musicThumb img{
+  width: 80%;
+}
+.musicThumb p{
+  margin-top: 6px;
+}
+.audio{
+  width: 80%;
 }
