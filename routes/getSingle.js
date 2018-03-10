@@ -14,7 +14,7 @@ router.get('/:id', (req, res) => {
     } else {
       console.log(result);
       res.render('watch',{
-        title: 'watch page',
+        title: 'Fran\'s Greatest Hits',
         singleData : result[0],
         reviewData : revResult,
         css : 'main.css'
