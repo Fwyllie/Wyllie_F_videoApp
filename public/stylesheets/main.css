@@ -3,18 +3,18 @@ body {
   margin: 0;
   padding: 0;
 }
-
 a {
-  color: #00B7FF;
+  color: white;
 }
 h2{
   font-size: 2em;
+  color: white;
 }
 .hidden{
   display: none;
 }
 body{
-  background: linear-gradient(to bottom right, #C299FF, #9261BF);
+  background: linear-gradient(to bottom right, #000, #401C7D);
   min-height: 100vh;
 }
 #container{
@@ -107,7 +107,7 @@ body{
   width: 80px;
 }
 .userIcon p, .userIconKids p{
-  color: black;
+  color: white;
   font-size: 1.3em;
 }
 .userIcon p:hover, .userIconKids p:hover{
@@ -119,11 +119,32 @@ body{
   margin-left: 45px;
   text-decoration: none;
 }
+.bigLogin{
+  width: 250px;
+  padding: 15px;
+  margin: 100px auto 0px;
+  border: 8px solid #7FBD9D;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 1.7em;
+}
+.bigLogin p{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+.bigLogin:hover{
+  background-color: #7FBD9D;
+}
+.bigLogin:hover{
+  color: #401C7D;
+}
 #services{
   margin: 100px 0px 120px 0px;
   text-align: center;
   padding: 0px 15%;
   font-size: 1.3em;
+  color: white;
 }
 #eras{
   margin-bottom: 50px;
@@ -200,16 +221,17 @@ footer p{
 }
 #parentsIntro{
   font-size: 2em;
-  color: #000;
+  color: #fff;
 }
 #movies h2, #music h2, #tv h2{
-  border-bottom: 2px solid #2C1B36;
+  border-bottom: 4px solid  #553285;
   padding-bottom: 5px;
 }
 .filterOption{
   display: inline-block;
   margin: 2px 10px;
   font-size: 1.2em;
+  color: white;
 }
 .filterOption:hover{
   color: #553285;
@@ -218,11 +240,14 @@ footer p{
 }
 #Intro{
   font-size: 2em;
-  color: #9664D1;
+  color: #fff;
 }
 .Intro2{
   font-size: 1.6em;
-  color: #000;
+  color: #fff;
+}
+#clearF{
+  color: white;
 }
 .movieThumb{
   display: inline-block;
@@ -235,6 +260,7 @@ footer p{
 }
 .movieThumb h3{
   font-size: 1.3em;
+  color: white;
 }
 .movieThumb h3:hover{
   color: #553285;
@@ -242,7 +268,7 @@ footer p{
 .musicThumb{
   display: inline-block;
   margin: 20px 0px;
-  color: black;
+  color: white;
   width: 15%;
 }
 .musicThumb img{
@@ -252,9 +278,9 @@ footer p{
 .audio{
   width: 80%;
 }
-
-
+/*SINGLE MOVIE*/
 .secF{
+  color: white;
   display: inline-block;
   margin: 2px 10px;
   font-size: 1.2em;
@@ -265,21 +291,26 @@ footer p{
   margin-bottom: 0px;
   border-bottom: 2px solid #553285;
 }
+#watchMovies{
+  margin: 0 auto;
+}
 .mainVideo{
-  width: 100%;
+  width: 90%;
+  margin-left: 3.5%;
 }
 #mainText{
   max-width: 50%;
-  padding: 0px 20px;
+  padding: 20px 50px;
   display: inline-block;
+  color: white;
 }
 #mainTitle{
   font-size: 2.2em;
   color: #553285;
-  margin-top: 0;
+  margin: 0;
 }
-.movieThumb p{
-  font-size: 1.1em;
+.watchContent p{
+  font-size: 1.2em;
 }
 #year, #rating{
   display: inline-block;
@@ -292,16 +323,46 @@ footer p{
   margin-bottom: 30px;
 }
 .socials{
-  color: black;
-  text-decoration: none;
-  margin-right: 10px;
+  margin: 5px;
+  display: inline-block;
+}
+.socials img{
+  width: 50px;
 }
 #movieCover{
   max-width: 15%;
   padding: 10px;
   display: inline-block;
-  margin-left: 20%;
-  margin-top: 50px;
+  margin-left: 40%;
 }
 
-/*SINGLE MOVIE*/
+#reviews{
+  padding: 0 50px 50px;
+  color: white;
+  display: inline-block;
+  width: 40%;
+}
+#reviewName{
+  color: #553285;
+  font-size: 1.5em;
+}
+#reviewComment{
+  padding-bottom: 20px;
+  border-bottom: 2px solid #553285;
+}
+.writeReview{
+  display: inline-block;
+  width: 45%;
+  text-align: right;
+  color: white;
+}
+
+.writeReview input, .writeReview textarea{
+  font-size: 1em;
+  padding: 5px;
+}
+#submitRev{
+  font-size: 1.5em;
+  padding: 5px;
+  margin-top: 20px;
+}

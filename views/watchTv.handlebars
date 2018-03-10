@@ -1,12 +1,12 @@
   <div id="watchMovies">
     <a id="homeButton" href="./">Home</a>
-    <div class="watchContent" id="{{singleData.movie_id}}">
-      <video controls class="mainVideo" src="/videos/{{singleData.movie_trailer}}" alt="{{singleData.movie_title}}" poster="/images/{{singleData.movie_thumbnail}}"></video>
+    <div class="watchContent" id="{{singleData.tv_id}}">
+      <video controls class="mainVideo" src="/videos/{{singleData.tv_video}}" alt="{{singleData.tv_name}}" poster="/images/{{singleData.tv_thumbnail}}"></video>
       <div id="mainText">
-        <h2 id="mainTitle">{{singleData.movie_title}}</h2>
-        <p id="year">Release: {{singleData.movie_year}}</p>
-        <p id="rating">Rating: {{singleData.movie_rating}}</p>
-        <p id="desc">{{singleData.movie_desc}}</p>
+        <h2 id="mainTitle">{{singleData.tv_name}}</h2>
+        <p id="year">Episodes: {{singleData.tv_episode}}</p>
+        <p id="rating">Rating: {{singleData.tv_rating}}</p>
+        <p id="desc">{{singleData.tv_desc}}</p>
           <div class="socials">
             <a href="#">
               <img src="/images/twitter.svg" alt="twitter">
@@ -42,5 +42,4 @@
         <input id="submitRev" type="submit" value="Submit!">
       </form>
     </div>
-    <!-- <img id="movieCover" src="/images/{{singleData.movie_cover}}" alt="{{singleData.movie_title}}"> -->
   </div>

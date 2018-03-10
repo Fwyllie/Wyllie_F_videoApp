@@ -37,7 +37,7 @@
     <div id="kidsMovies">
       <h2>MOVIES!</h2>
       {{#each movieData}}
-      <a class="movieLink" href="/movies/{{movie_id}}" id="{{movie_id}}">
+      <a class="movieLink" href="/watch/{{movie_id}}" id="{{movie_id}}">
         <div class="movieThumb">
           <img src="images/{{movie_thumbnail}}" alt="{{movie_title}}">
           <h3>{{movie_title}}</h3>
@@ -51,7 +51,7 @@
       <h2>MUSIC!</h2>
       {{#each musicData}}
         <div class="musicThumb">
-          <img class="musicCover" src="images/{{music_thumbnail}}" alt="{{music_name}}">
+          <img class="musicCover" src="/images/{{music_thumbnail}}" alt="{{music_name}}">
           <audio controls class="audio" src="audio/{{music_link}}"></audio>
           <h3>{{music_name}}</h3>
           <p>{{music_artist}}</p>
@@ -63,11 +63,13 @@
     <div id="kidsTv">
       <h2>TV SHOWS!</h2>
       {{#each tvData}}
+      <a class="movieLink" href="/watchTv/{{tv_id}}" id="{{tv_id}}">
         <div class="movieThumb">
-          <img src="images/{{tv_thumbnail}}" alt="{{tv_name}}">
+          <img src="/images/{{tv_thumbnail}}" alt="{{tv_name}}">
           <h3>{{tv_name}}</h3>
           <p>{{tv_artist}}</p>
         </div>
+      </a>
       {{/each}}
     </div>
   </div>

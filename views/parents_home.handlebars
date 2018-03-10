@@ -68,11 +68,13 @@
   <div id="tv">
     <h2>TV Shows!</h2>
     {{#each tvData}}
+    <a class="movieLink" href="/watchTv/{{tv_id}}" id="{{tv_id}}">
       <div class="movieThumb">
-        <img src="images/{{tv_thumbnail}}" alt="{{tv_name}}">
+        <img src="/images/{{tv_thumbnail}}" alt="{{tv_name}}">
         <h3>{{tv_name}}</h3>
         <p>{{tv_artist}}</p>
       </div>
+    </a>
     {{/each}}
   </div>
 </div>

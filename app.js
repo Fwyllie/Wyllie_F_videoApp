@@ -27,6 +27,7 @@ app.use('/login', require('./routes/login'));
 app.use('/parents', require('./routes/parentContent'));
 app.use('/kids', require('./routes/kidsContent'));
 app.use('/watch', require('./routes/getSingle'));
+app.use('/watchTv', require('./routes/getSingleTv'));
 // app.use('/api', require('./routes/api'));
 
 

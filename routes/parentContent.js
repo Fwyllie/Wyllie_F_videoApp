@@ -37,7 +37,7 @@ router.get('/:id', (req, res) => {
       console.log(err);
     } else {
       res.render('parents_home', {
-        movieData : result
+        filterData : result
       });
       console.log(result);
     }
